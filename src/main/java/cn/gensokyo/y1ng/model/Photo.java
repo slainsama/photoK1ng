@@ -18,9 +18,15 @@ public class Photo {
     private Long photoId;
 
     @Column
+    private String batch;
+
+    @Column
     private String photoComment;
 
     @Column(nullable = false)
     private String filePath;
+
+    @Column
+    private long timeStamp;
 
 }

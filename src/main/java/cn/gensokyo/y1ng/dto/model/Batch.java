@@ -1,6 +1,7 @@
-package cn.gensokyo.y1ng.dto.response;
+package cn.gensokyo.y1ng.dto.model;
 
 
+import cn.gensokyo.y1ng.model.Photo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,11 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ImageUploadResponse {
-
-    private long[] id;
-
-    private String status;
-
-    private String batch;
+public class Batch {
+    private String batchId;
+    private Photo[] photos;
 }

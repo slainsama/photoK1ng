@@ -10,11 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ImageUploadResponse {
-
-    private long[] id;
-
+public class ImageDeleteResponse {
+    private String imageId;
     private String status;
-
-    private String batch;
 }
